@@ -1,0 +1,21 @@
+header{
+    font-size: 18px;
+    color: rgba(7, 248, 248, 0.986);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #EEE;
+}
+a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  .active {
+    color: #666;
+    text-decoration: underline;
+  }

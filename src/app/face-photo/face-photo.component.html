@@ -1,0 +1,6 @@
+
+<div class="face-photo-card" [ngClass]="{pho: buttonText==='Oops, unphoto'}">
+    <h2>{{facephoto.title | uppercase}}</h2>
+    <p>Mise en ligne le{{facephoto.description}}</p>
+    <button (click)="onviewFacePhoto()">View</button> 
+    </div>

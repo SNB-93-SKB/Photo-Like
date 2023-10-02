@@ -1,0 +1,12 @@
+<div class="face-photo-card" [ngClass]="{pho: buttonText==='Oops, unphoto'}">
+    <h2>{{facephoto.title | uppercase}}</h2>
+    <a routerLink="/facephotos">Retour</a>
+    <p>Mise en ligne le{{facephoto.description}}</p>
+    <p *ngIf="facephoto.localisation">photo prise à {{facephoto.localisation}}</p>
+    <img [src]="facephoto.imageUrl" [alt]="facephoto.title">
+    <h2>{{facephoto.createdDate | date: 'dd/MM/yy, à HH:mm'}}</h2>
+    <p>
+        <button (click)="onphoto()">{{buttonText}}</button>
+        <span [ngStyle]="{color:'rgb(0,'+ facephoto.photo +',0)'}"> {{facephoto.photo}}</span>
+    </p>
+    </div>
